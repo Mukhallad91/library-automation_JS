@@ -7,4 +7,12 @@ export class BrowserUtility {
     // ADD YOUR OWN BROWSER UTILITY FUNCTIONS HERE...
     
 
+    // CREATE FUNCTIONS THAT CAN VERIFY EXPECTED AND ACTUAL MESSAGES ARE EQUAL USE PROMISES
+
+            static async verifyMessages(actual ,expected) {
+                 return new Promise((resolve) => {
+                    resolve(expected.toString() === actual.toString);
+                });
+            }
+       
 }
